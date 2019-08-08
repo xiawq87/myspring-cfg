@@ -1,0 +1,22 @@
+{
+  "beans": [
+    {
+      "id": "userService",
+      "class": "com.xwq.service.impl.UserServiceImpl"
+    },
+    {
+      "id": "userDao22",
+      "class": "com.xwq.dao.impl.UserDaoImpl"
+    },
+    {
+      "id": "userDao",
+      "class": "com.xwq.dao.impl.UserDaoImpl"
+    }
+  ],
+  "aop": [
+    {
+      "aspect": "com.xwq.spring.aop.LogInvocationHandler",
+      "pointcut": "com.xwq.service.impl.UserServiceImpl"
+    }
+  ]
+}
